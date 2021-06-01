@@ -70,3 +70,4 @@ def register_page(request):
         new_user = User.objects.create_user(username, email, password)
         print(new_user)
     return render(request, "auth/register.html", context)
+    
